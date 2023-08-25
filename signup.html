@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+            background-color: #dbdbdb;
+        }
+
+        h5 {
+            font-family: "Arial", sans-serif;
+            font-size: 20px;
+            color: #1877F2;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-family: "Arial", sans-serif;
+            font-size: 40px;
+            color: #1877F2;
+        }
+
+        h2 {
+            font-family: "Arial", sans-serif;
+            font-size: 25px;
+        }
+
+        p {
+            color: gray;
+            font-size: 11px;
+        }
+
+        table {
+            font-family: "Arial", sans-serif;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 2%;
+            box-shadow: #dbdbdb;
+        }
+
+        input {
+            height: 33px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            border: 1px solid rgb(177, 176, 176);
+            margin: 5px;
+        }
+
+        hr {
+            color: rgb(177, 176, 176);
+        }
+
+        input[type="text"] {
+            width: 100%;
+        }
+
+        button {
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            text-align: center;
+            color: #ffffff;
+            background-color: rgb(31, 175, 31);
+            font-weight: bold;
+            border: none;
+            width: 100%;
+            height: 37px;
+        }
+
+        #maindiv {
+            width: 90%;
+            max-width: 425px;
+            height: auto;
+            font-family: "Arial", sans-serif;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 2%;
+            box-shadow: #dbdbdb;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        legend {
+            margin-left: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        select {
+            width: 31%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #ffffff;
+            font-size: 16px;
+            color: #555;
+            margin-left: 2px;
+        }
+
+        label {
+            background-color: #ffffff;
+            font-size: 16px;
+            color: #555;
+        }
+
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid #888888;
+            background-color: #fff;
+            outline: none;
+            cursor: pointer;
+            vertical-align: middle;
+            position: relative;
+            margin-right: 6px;
+        }
+
+        #border {
+            width: 110px;
+            height: 25px;
+            border: 1px solid rgb(161, 161, 161);
+            border-radius: 5px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Facebook</h1>
+    <div id="maindiv">
+        <form action="" style="padding: 20px;">
+            <h2 align="center">Create a new account</h2>
+            <p align="center">It's quick and easy</p>
+            <hr>
+            <input type="text" name="fname" placeholder="First Name">
+            <input type="text" name="sname" placeholder="Sur Name">
+            <input type="email" name="email" placeholder="Email or Phone number"><br/>
+            <input type="password" name="sname" placeholder="New Password">
+
+            <p>Date of Birth</p>
+            <div style="display: flex; flex-direction:row; justify-content: space-between;">
+                <select id="date" name="date">
+                    <option selected>1</option>
+                    <!-- ... -->
+                    <option>31</option>
+                </select>
+                <select id="month" name="month">
+                    <!-- ... -->
+                </select>
+                <select id="year" name="year">
+                    <!-- ... -->
+                </select>
+            </div>
+
+            <p>Gender</p>
+            <div style="display: flex; flex-direction:row; justify-content: space-between;">
+                <div id="border">
+                    <label>Male</label>
+                    <input type="radio" name="gender" class="gender" value="Male">
+                </div>
+                <!-- ... -->
+            </div>
+            <p>People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
+            <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.
+                You may receive SMS notifications from us and can opt out at any time</p>
+            <button>Sign Up</button>
+            <center><h5>Already have an account?</h5></center>
+        </form>
+    </div>
+</body>
+
+</html>
